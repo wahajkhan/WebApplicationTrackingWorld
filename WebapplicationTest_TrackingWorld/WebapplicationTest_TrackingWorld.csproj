@@ -68,6 +68,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\css\materialize.css" />
+    <Content Include="Assets\Js\lib\materialize.js" />
     <Content Include="ErrorPages\Oops.aspx" />
     <Content Include="packages.config" />
     <None Include="Web.Debug.config">

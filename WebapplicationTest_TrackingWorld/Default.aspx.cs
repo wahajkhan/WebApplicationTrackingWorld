@@ -18,6 +18,7 @@ namespace WebapplicationTest_TrackingWorld
         protected void Page_Load(object sender, EventArgs e)
         { 
             new BAL().BAL_DB_Checker();
+            preveiwbtn.Visible = false;
         }
 
         protected void Upload(object sender, EventArgs e)
@@ -52,33 +53,31 @@ namespace WebapplicationTest_TrackingWorld
             da.Fill(dt);
             grdVeiw.DataSource = dt;
             grdVeiw.DataBind();
+                preveiwbtn.Attributes.Add("style", "display:block");
             conn.Close();
+                 
 
+            //DataTable dtColumnMapping = new DataTable();
 
-            List<string> ExcelColumn = (from dc in dt.Columns.Cast<DataColumn>()
-                                    select dc.ColumnName).ToList();
+            //dtColumnMapping.Columns.Add("ExcelColumn");
+            //dtColumnMapping.Columns.Add("dbColumn");
 
-            DataTable dtColumnMapping = new DataTable();
+            //dtColumnMapping.Rows.Add("RegNo", "RegNo");
+            //dtColumnMapping.Rows.Add("Make", "Make");
+            //dtColumnMapping.Rows.Add("Model", "Model");
+            //dtColumnMapping.Rows.Add("Color", "Color");
+            //dtColumnMapping.Rows.Add("EngineNo", "EngineNo");
+            //dtColumnMapping.Rows.Add("ChasisNo", "ChasisNo");
+            //dtColumnMapping.Rows.Add("DateOfPurchase", "DateOfPurchase");
+            //dtColumnMapping.Rows.Add("Active", "Active");
 
-            dtColumnMapping.Columns.Add("ExcelColumn");
-            dtColumnMapping.Columns.Add("dbColumn");
-
-            dtColumnMapping.Rows.Add("RegNo", "RegNo");
-            dtColumnMapping.Rows.Add("Make", "Make");
-            dtColumnMapping.Rows.Add("Model", "Model");
-            dtColumnMapping.Rows.Add("Color", "Color");
-            dtColumnMapping.Rows.Add("EngineNo", "EngineNo");
-            dtColumnMapping.Rows.Add("ChasisNo", "ChasisNo");
-            dtColumnMapping.Rows.Add("DateOfPurchase", "DateOfPurchase");
-            dtColumnMapping.Rows.Add("Active", "Active");
-
-            new Connection().BulkInsert(dt, dtColumnMapping, "Vehicle");
+            //new Connection().BulkInsert(dt, dtColumnMapping, "Vehicle");
 
             }
             catch (Exception ex)
             {
                 
-                Response.Redirect("ErrorPages/Oops.aspx?error=FileNotfound");
+                //Response.Redirect("ErrorPages/Oops.aspx?error=FileNotfound");
             }
 
 

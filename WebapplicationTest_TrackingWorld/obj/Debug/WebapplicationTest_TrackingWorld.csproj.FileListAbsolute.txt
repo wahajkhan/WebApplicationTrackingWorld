@@ -34,3 +34,39 @@ c:\users\wahaj\documents\visual studio 2017\Projects\WebapplicationTest_Tracking
 c:\users\wahaj\documents\visual studio 2017\Projects\WebapplicationTest_TrackingWorld\WebapplicationTest_TrackingWorld\obj\Debug\WebapplicationTest_TrackingWorld.csprojResolveAssemblyReference.cache
 c:\users\wahaj\documents\visual studio 2017\Projects\WebapplicationTest_TrackingWorld\WebapplicationTest_TrackingWorld\obj\Debug\WebapplicationTest_TrackingWorld.dll
 c:\users\wahaj\documents\visual studio 2017\Projects\WebapplicationTest_TrackingWorld\WebapplicationTest_TrackingWorld\obj\Debug\WebapplicationTest_TrackingWorld.pdb
+C:\Users\wahaj\Desktop\Git hub\WebApplicationTrackingWorld\WebapplicationTest_TrackingWorld\bin\roslyn\csc.exe
+C:\Users\wahaj\Desktop\Git hub\WebApplicationTrackingWorld\WebapplicationTest_TrackingWorld\bin\roslyn\csc.exe.config
+C:\Users\wahaj\Desktop\Git hub\WebApplicationTrackingWorld\WebapplicationTest_TrackingWorld\bin\roslyn\csc.rsp
+C:\Users\wahaj\Desktop\Git hub\WebApplicationTrackingWorld\WebapplicationTest_TrackingWorld\bin\roslyn\csi.exe
+C:\Users\wahaj\Desktop\Git hub\WebApplicationTrackingWorld\WebapplicationTest_TrackingWorld\bin\roslyn\csi.rsp
+C:\Users\wahaj\Desktop\Git hub\WebApplicationTrackingWorld\WebapplicationTest_TrackingWorld\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\wahaj\Desktop\Git hub\WebApplicationTrackingWorld\WebapplicationTest_TrackingWorld\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\wahaj\Desktop\Git hub\WebApplicationTrackingWorld\WebapplicationTest_TrackingWorld\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\wahaj\Desktop\Git hub\WebApplicationTrackingWorld\WebapplicationTest_TrackingWorld\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\wahaj\Desktop\Git hub\WebApplicationTrackingWorld\WebapplicationTest_TrackingWorld\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\wahaj\Desktop\Git hub\WebApplicationTrackingWorld\WebapplicationTest_TrackingWorld\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\wahaj\Desktop\Git hub\WebApplicationTrackingWorld\WebapplicationTest_TrackingWorld\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\wahaj\Desktop\Git hub\WebApplicationTrackingWorld\WebapplicationTest_TrackingWorld\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\wahaj\Desktop\Git hub\WebApplicationTrackingWorld\WebapplicationTest_TrackingWorld\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\wahaj\Desktop\Git hub\WebApplicationTrackingWorld\WebapplicationTest_TrackingWorld\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\wahaj\Desktop\Git hub\WebApplicationTrackingWorld\WebapplicationTest_TrackingWorld\bin\roslyn\System.AppContext.dll
+C:\Users\wahaj\Desktop\Git hub\WebApplicationTrackingWorld\WebapplicationTest_TrackingWorld\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\wahaj\Desktop\Git hub\WebApplicationTrackingWorld\WebapplicationTest_TrackingWorld\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\wahaj\Desktop\Git hub\WebApplicationTrackingWorld\WebapplicationTest_TrackingWorld\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\wahaj\Desktop\Git hub\WebApplicationTrackingWorld\WebapplicationTest_TrackingWorld\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\wahaj\Desktop\Git hub\WebApplicationTrackingWorld\WebapplicationTest_TrackingWorld\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\wahaj\Desktop\Git hub\WebApplicationTrackingWorld\WebapplicationTest_TrackingWorld\bin\roslyn\vbc.exe
+C:\Users\wahaj\Desktop\Git hub\WebApplicationTrackingWorld\WebapplicationTest_TrackingWorld\bin\roslyn\vbc.exe.config
+C:\Users\wahaj\Desktop\Git hub\WebApplicationTrackingWorld\WebapplicationTest_TrackingWorld\bin\roslyn\vbc.rsp
+C:\Users\wahaj\Desktop\Git hub\WebApplicationTrackingWorld\WebapplicationTest_TrackingWorld\bin\roslyn\VBCSCompiler.exe
+C:\Users\wahaj\Desktop\Git hub\WebApplicationTrackingWorld\WebapplicationTest_TrackingWorld\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\wahaj\Desktop\Git hub\WebApplicationTrackingWorld\WebapplicationTest_TrackingWorld\bin\WebapplicationTest_TrackingWorld.dll.config
+C:\Users\wahaj\Desktop\Git hub\WebApplicationTrackingWorld\WebapplicationTest_TrackingWorld\bin\WebapplicationTest_TrackingWorld.dll
+C:\Users\wahaj\Desktop\Git hub\WebApplicationTrackingWorld\WebapplicationTest_TrackingWorld\bin\WebapplicationTest_TrackingWorld.pdb
+C:\Users\wahaj\Desktop\Git hub\WebApplicationTrackingWorld\WebapplicationTest_TrackingWorld\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\wahaj\Desktop\Git hub\WebApplicationTrackingWorld\WebapplicationTest_TrackingWorld\bin\Newtonsoft.Json.dll
+C:\Users\wahaj\Desktop\Git hub\WebApplicationTrackingWorld\WebapplicationTest_TrackingWorld\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\wahaj\Desktop\Git hub\WebApplicationTrackingWorld\WebapplicationTest_TrackingWorld\bin\Newtonsoft.Json.xml
+C:\Users\wahaj\Desktop\Git hub\WebApplicationTrackingWorld\WebapplicationTest_TrackingWorld\obj\Debug\WebapplicationTest_TrackingWorld.csprojResolveAssemblyReference.cache
+C:\Users\wahaj\Desktop\Git hub\WebApplicationTrackingWorld\WebapplicationTest_TrackingWorld\obj\Debug\WebapplicationTest_TrackingWorld.dll
+C:\Users\wahaj\Desktop\Git hub\WebApplicationTrackingWorld\WebapplicationTest_TrackingWorld\obj\Debug\WebapplicationTest_TrackingWorld.pdb
