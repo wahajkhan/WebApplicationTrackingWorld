@@ -2,6 +2,7 @@
 var TrackingWorld = {
     Obj: {
         Vehicle_Tbl_Obj: null,
+        StatusDDL: null
     },
     Init: function () {
         TrackingWorld.tableInit([]);
@@ -11,21 +12,23 @@ var TrackingWorld = {
     },
     Element_Init: function () {
         M.AutoInit();
+        //TrackingWorld.Obj.StatusDDL = $('[data-ddlStatus]').formSelect();
     },
     ele_Event: function () {
         $(document).on('click', '[data-editbtn]', function () {
             var data_row = TrackingWorld.Obj.Vehicle_Tbl_Obj.row($(this).closest('tr')).data();
             //alert(data_row);
             console.log(data_row);
+            TrackingWorld.Edit_DataPlotter(data_row);
+            M.updateTextFields();
         });
 
         $('#dataPreviewModal').modal({
-            dismissible: false, // Modal can be dismissed by clicking outside of the modal
-            onOpenStart: function (modal, trigger) { // Callback for Modal open. Modal and trigger parameters available.
-                alert("Ready");
-                console.log(modal, trigger);
-            },
-            complete: function () { alert('Closed'); } // Callback for Modal close
+            dismissible: false, 
+            onOpenStart: function (modal, trigger) { 
+                //alert("Ready");
+                //console.log(modal, trigger);
+            }, 
         }
         );
     },
@@ -130,6 +133,42 @@ var TrackingWorld = {
         //        console.log(msg);
         //    }
         //});
+    },
+    Edit_DataPlotter: function (json) {
+        $.map(json, function (data, key) {
+            switch (key) {
+                case "RegNo":
+                    $('[data-regno]').val(data);
+                    break;
+                case "Make":
+                    $('[data-make]').val(data);
+                    break;
+                case "Model":
+                    $('[data-modal]').val(data);
+                    break;
+                case "Color":
+                    $('[data-color]').val(data);
+                    break;
+                case "EngineNo":
+                    $('[data-engineno]').val(data);
+                    break;
+                case "ChasisNo":
+                    $('[data-chasisno]').val(data);
+                    break;
+                case "DateOfPurchase":
+                    $('[data-dop]').val(data);
+                    break; 
+                case "Active": 
+                    //TrackingWorld.Obj.StatusDDL[0].selectize.setValue(data, false);
+
+                    $('[data-ddlStatus]').val("1");
+
+                    // re-initialize material-select
+                    $('[data-ddlStatus]').formSelect();
+
+                    break;  
+            }
+        });
     }
 }
 

@@ -70,6 +70,7 @@
   <ItemGroup>
     <Content Include="Assets\css\materialize.css" />
     <Content Include="Assets\Js\lib\materialize.js" />
+    <Content Include="ErrorPages\404.aspx" />
     <Content Include="ErrorPages\Oops.aspx" />
     <Content Include="packages.config" />
     <None Include="Web.Debug.config">
@@ -99,6 +100,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorPages\404.aspx.cs">
+      <DependentUpon>404.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErrorPages\404.aspx.designer.cs">
+      <DependentUpon>404.aspx</DependentUpon>
     </Compile>
     <Compile Include="ErrorPages\Oops.aspx.cs">
       <DependentUpon>Oops.aspx</DependentUpon>

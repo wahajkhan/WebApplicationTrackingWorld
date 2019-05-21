@@ -11,9 +11,9 @@ namespace WebapplicationTest_TrackingWorld
     {
         protected void Application_Error(object sender, EventArgs e)
         {
-            //Exception ex = Server.GetLastError();
-            //Server.ClearError();
-            //Response.Redirect("ErrorPages/Oops.aspx");
+            Exception ex = Server.GetLastError();
+            Server.ClearError();
+            Response.Redirect("ErrorPages/Oops.aspx");
         }
         protected void Application_Start(object sender, EventArgs e)
         {

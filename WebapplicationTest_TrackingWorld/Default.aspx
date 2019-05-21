@@ -22,6 +22,12 @@
         .modal-large{
             width:90%;
         }
+        .txt-danger{
+            color:red;
+        }
+        .txt-success{
+            color:green;
+        }
     </style>
 </head>
 <body>
@@ -46,12 +52,22 @@
                             <div class="col col-s1 " style="padding: 15px">
                                 <asp:LinkButton Style="color: white;" CssClass="waves-effect waves-light btn" OnClick="Upload" runat="server">Upload</asp:LinkButton>
                             </div>
-                            <div class="col col-s1 " runat="server"  id="preveiwbtn" style="padding: 15px;display:none">
+                            <div class="col col-s1 " runat="server"  style="padding: 15px"  id="preveiwbtn" >
 
                                  <a class="waves-effect waves-light btn modal-trigger" href="#dataPreviewModal">Preview</a>
 
                             </div>
+                             <div class="col col-s1 " runat="server"  style="padding: 15px"  id="savebtn" >
+
+                                <asp:LinkButton Style="color: white;" CssClass="waves-effect waves-light btn" OnClick="SaveData" runat="server">Save</asp:LinkButton>
+
+                            </div>
         </div>
+                        <div class="row">
+                            <div class="col s12">
+                                <asp:Label runat="server" ID="lbl_Status"></asp:Label>
+                            </div>
+                        </div>
         </div>
                 </div>
                
@@ -67,7 +83,7 @@
         </div>
 
 
-        <!-- Modal Structure -->
+        <!-- Modal Edit and Add Data -->
         <div id="modal1" class="modal bottom-sheet">
             <div class="modal-content">
                 <div class="row">
@@ -110,9 +126,9 @@
                                     </div>
                                     <div class="input-field col s3">
                                         <%--<input data-status="" type="text" class="validate" />--%>
-                                        <select>
-                                            <option>Active</option>
-                                            <option>In-Active</option>
+                                        <select data-ddlStatus="">
+                                            <option value="0">Active</option>
+                                            <option value="1">In-Active</option>
                                         </select>
                                         <label for="status">Status</label>
                                     </div>
@@ -132,20 +148,16 @@
                 </div>
             </div>             
         </div>
+         
 
-          <!-- Modal Trigger -->
- 
-
-  <!-- Modal Structure -->
+  <!-- Modal Data Preview -->
   <div id="dataPreviewModal" class="modal modal-large">
       <div class="modal-closebtn modal-close"><i class="material-icons">close</i></div>
     <div class="modal-content">
-      <h4>Modal Header</h4>
+      <h4>Excel Data Preview <small runat="server" id="lbl_dataCount"></small></h4>
        <asp:GridView runat="server"  ID="grdVeiw"></asp:GridView>
     </div>
-   <%-- <div class="modal-footer">
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
-    </div>--%>
+  
   </div>
           
 

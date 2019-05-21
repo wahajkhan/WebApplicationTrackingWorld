@@ -40,6 +40,33 @@ namespace WebapplicationTest_TrackingWorld {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl preveiwbtn;
         
         /// <summary>
+        /// savebtn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl savebtn;
+        
+        /// <summary>
+        /// lbl_Status control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbl_Status;
+        
+        /// <summary>
+        /// lbl_dataCount control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl lbl_dataCount;
+        
+        /// <summary>
         /// grdVeiw control.
         /// </summary>
         /// <remarks>
