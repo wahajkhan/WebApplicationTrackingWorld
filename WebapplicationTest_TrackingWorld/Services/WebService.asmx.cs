@@ -25,5 +25,25 @@ namespace WebapplicationTest_TrackingWorld.Services
             DataTable dt=  new BAL().BAL_VehicleData();
             return JsonConvert.SerializeObject(dt);
         }
+
+        [WebMethod]
+        public string VehilceDataUpdate(object data)
+        {
+            string res= new BAL().BAL_VehicleUpdate(data);
+            return res;
+        }
+
+        [WebMethod]
+        public string VehilceDataDelete(object data)
+        {
+            string res = new BAL().BAL_VehicleDelete(data);
+            return res;
+        }
+        [WebMethod]
+        public string VehilceDataAdd(object data)
+        {
+            string res = new BAL().BAL_VehicleAdd(data);
+            return res;
+        }
     }
 }

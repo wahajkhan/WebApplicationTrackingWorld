@@ -38,8 +38,7 @@ namespace WebapplicationTest_TrackingWorld.Classes
 
         public string dbCreateTble(string Query)
         {
-            cmd = new SqlCommand(Query,con);
-            cmd.CommandText = Query;
+            cmd = new SqlCommand(Query,con); 
             con.Open();
             cmd.ExecuteNonQuery();
             con.Close();
@@ -83,5 +82,14 @@ namespace WebapplicationTest_TrackingWorld.Classes
             return "";
         }
 
+        public string DML_Command(string Query)
+        {
+            cmd = new SqlCommand(Query, con);
+            con.Open();
+            cmd.ExecuteNonQuery();
+            con.Close();
+
+            return "done";
+        }
 }
 }

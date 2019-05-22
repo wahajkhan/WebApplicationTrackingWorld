@@ -20,5 +20,22 @@ namespace WebapplicationTest_TrackingWorld.Classes
         {
             return DAL_VehicleData();
         }
+
+        public string BAL_VehicleUpdate(object data)
+        {
+            Dictionary<string, object> Dic = (Dictionary<string, object>)data;
+            return DAL_VehicleUpdate(Dic);
+        }
+        public string BAL_VehicleDelete(object data)
+        {
+            Dictionary<string, object> Dic = (Dictionary<string, object>)data;
+            return DAL_VehicleDelete(Dic);
+        }
+        public string BAL_VehicleAdd(object data)
+        {
+            Dictionary<string, object> Dic = (Dictionary<string, object>)data;
+            return DAL_VehicleAdd(Dic);
+        }
+
     }
 }
