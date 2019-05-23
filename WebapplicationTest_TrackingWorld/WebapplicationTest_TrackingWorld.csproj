@@ -73,6 +73,7 @@
     <Content Include="ErrorPages\404.aspx" />
     <Content Include="ErrorPages\Oops.aspx" />
     <Content Include="packages.config" />
+    <Content Include="Files\Example File.xls" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -126,7 +127,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Files\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>

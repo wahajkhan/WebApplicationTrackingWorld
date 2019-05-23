@@ -56,39 +56,37 @@ namespace WebapplicationTest_TrackingWorld
            
             da.Fill(dt_excel);
 
-                string[] ColName =new string[] { "", "", "", "" };
-                //RegNo,Make,Model,Color,EngineNo,ChasisNo,DateOfPurchase,Active
-                string[] columnNames = dt_excel.Columns.Cast<DataColumn>()
-                                 .Select(x => x.ColumnName)
-                                 .ToArray();
 
-                for (int i = 0; i < columnNames.Length; i++)
+
+                bool a = DataTableColumnCompare(dt_excel);
+
+
+                if (a)
                 {
+                    lbl_Status.Visible = true;
+                    lbl_Status.Text = FileUpload1.FileName + " File upload successfully , for shown data click on preview";
+                    lbl_Status.CssClass = "txt-success";
 
-                   if(dt_excel.Columns.Contains(columnNames[i].ToString()))
-                    {
+                    grdVeiw.DataSource = dt_excel;
+                    grdVeiw.DataBind();
 
-                    }
+                    conn.Close();
+                    preveiwbtn.Visible = true;
+                    savebtn.Visible = true;
+
+                    lbl_dataCount.InnerText = "(No. of rows " + dt_excel.Rows.Count;
+                    ViewState["DataExcel"] = dt_excel;
+                    
+                }
+                else
+                {
+                    lbl_Status.Visible = true;
+                    lbl_Status.Text = FileUpload1.FileName + " File Columns are not match please download example file";
+                    lbl_Status.CssClass = "txt-danger";
+
                 }
 
 
-
-
-
-
-
-                grdVeiw.DataSource = dt_excel;
-            grdVeiw.DataBind();
-               
-            conn.Close();
-            preveiwbtn.Visible = true;
-                lbl_Status.Visible = true;
-                lbl_Status.Text = FileUpload1.FileName+ " File upload successfully , for shown data click on preview";
-                lbl_Status.CssClass = "txt-success";
-                lbl_dataCount.InnerText = "(No. of rows " + dt_excel.Rows.Count;
-                savebtn.Visible = true;
-
-                ViewState["DataExcel"] = dt_excel;
 
 
             }
@@ -103,6 +101,38 @@ namespace WebapplicationTest_TrackingWorld
 
 
         }
+
+        public bool DataTableColumnCompare(DataTable dt1)
+        {
+            string[] ColName = new string[] { "RegNo", "Make", "Model", "Color",
+                "EngineNo","ChasisNo","DateOfPurchase","Active"};
+             
+
+            string[] columnNames = dt1.Columns.Cast<DataColumn>()
+                             .Select(x => x.ColumnName)
+                             .ToArray();
+
+            bool res = false;
+
+            for (int i = 0; i < ColName.Length; i++)
+            {
+
+                if (dt_excel.Columns.Contains(ColName[i].ToString()))
+                {
+                    res = true;
+                }
+                else
+                {
+
+                    res = false;
+                    break;
+                    
+                }
+            }
+            return res;
+
+        }
+
 
         protected void SaveData(object sender, EventArgs e)
         {

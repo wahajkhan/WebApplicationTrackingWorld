@@ -71,6 +71,11 @@
                                 <asp:LinkButton Style="color: white;" CssClass="waves-effect waves-light btn" OnClick="SaveData" runat="server">Save</asp:LinkButton>
 
                             </div>
+                                 <div class="col col-s1 " runat="server"  style="padding: 15px"  id="Div1" >
+
+<%--                                <asp:LinkButton Style="color: white;" CssClass="waves-effect waves-light btn" OnClick="SaveData" runat="server">Save</asp:LinkButton>--%>
+                                     <a href="Files/Example File.xls" class="waves-effect waves-light btn">Download Example</a>
+                            </div>
         </div>
                         <div class="row">
                             <div class="col s12">
