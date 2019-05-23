@@ -50,11 +50,34 @@ namespace WebapplicationTest_TrackingWorld
             {
                 conn.Open();
             }
+             
             OleDbCommand cmd = new OleDbCommand(query, conn);
             OleDbDataAdapter da = new OleDbDataAdapter(cmd);
            
             da.Fill(dt_excel);
-            grdVeiw.DataSource = dt_excel;
+
+                string[] ColName =new string[] { "", "", "", "" };
+                //RegNo,Make,Model,Color,EngineNo,ChasisNo,DateOfPurchase,Active
+                string[] columnNames = dt_excel.Columns.Cast<DataColumn>()
+                                 .Select(x => x.ColumnName)
+                                 .ToArray();
+
+                for (int i = 0; i < columnNames.Length; i++)
+                {
+
+                   if(dt_excel.Columns.Contains(columnNames[i].ToString()))
+                    {
+
+                    }
+                }
+
+
+
+
+
+
+
+                grdVeiw.DataSource = dt_excel;
             grdVeiw.DataBind();
                
             conn.Close();
@@ -91,7 +114,7 @@ namespace WebapplicationTest_TrackingWorld
 
                 dtColumnMapping.Columns.Add("ExcelColumn");
                 dtColumnMapping.Columns.Add("dbColumn");
-
+               
                 dtColumnMapping.Rows.Add("RegNo", "RegNo");
                 dtColumnMapping.Rows.Add("Make", "Make");
                 dtColumnMapping.Rows.Add("Model", "Model");
